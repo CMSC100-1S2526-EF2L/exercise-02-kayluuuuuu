@@ -1,0 +1,50 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 0;
+}
+.navbar {
+    font-weight: bold;
+    color: white;
+    font-size: 3vh;
+    display: grid;
+    place-items: center;
+    background-color:mediumslateblue;
+    overflow: hidden;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "photo photo"
+        "prev prev"
+        "skills autobio";
+}
+
+.grid-container > div#content-heading {
+    grid-area: header;
+    text-align: center;
+}
+.grid-container > div#my-photo {
+    grid-area: photo;
+    text-align: center;
+}
+
+.grid-container > div#previous {
+    grid-area: prev;
+    text-align: center;
+}
+
+.grid-container > div#skills {
+    grid-area: skills;
+    text-align: center;
+}
+
+.grid-container > div#autobio {
+    grid-area: autobio;
+    text-align: center;
+}
