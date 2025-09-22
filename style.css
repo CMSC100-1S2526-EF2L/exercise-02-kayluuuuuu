@@ -4,6 +4,29 @@ html {
 body {
     margin: 0;
 }
+a {
+    color: white;
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+ul li {
+    float: left;
+    margin-right: 2vh;
+    margin-left: 2vh;
+}
+ul li a {
+    display: block;
+    text-align: center;
+    padding: 1vh;
+}
+ul li a:hover {
+    background-color: rgb(81, 69, 151);
+}
 .navbar {
     font-weight: bold;
     color: white;
@@ -17,17 +40,26 @@ body {
 }
 
 .grid-container {
+    font-size: 3vh;
+    margin-left: 15%;
+    margin-right: 15%;
     display: grid;
     grid-template-areas:
         "header header"
         "photo photo"
         "prev prev"
         "skills autobio";
+    grid-template-columns: 3fr 8fr;
 }
 
 .grid-container > div#content-heading {
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    font-size: 5vh;
     grid-area: header;
     text-align: center;
+    vertical-align: auto;
+    border-bottom: 0.01vh solid black;
 }
 .grid-container > div#my-photo {
     grid-area: photo;
@@ -35,16 +67,25 @@ body {
 }
 
 .grid-container > div#previous {
+    margin-top: 2vh;
     grid-area: prev;
     text-align: center;
+    vertical-align: auto;
+    border-bottom: 0.01vh solid black;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
 }
 
 .grid-container > div#skills {
     grid-area: skills;
     text-align: center;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
 }
 
 .grid-container > div#autobio {
     grid-area: autobio;
-    text-align: center;
+    text-align: left;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
 }
